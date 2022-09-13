@@ -1,6 +1,6 @@
 baseURL = "http://localhost"
-copyright = "Copyright © 2021"
-title = "hugo-theme-gruvbox"
+copyright = "© 2022 Georgi Chelenkov"
+title = "Georgi Chelenkov"
 #paginate = 10
 enableRobotsTXT = true
 
@@ -14,21 +14,21 @@ enableRobotsTXT = true
 
 [imaging]
   # JPEG and WebP image processing quality, defaults to 75%
-  #quality = 75
+  quality = 90
 
 [params]
   # dark or light, defaults to light
-  #defaultTheme = "light"
+  defaultTheme = "dark"
   # gray red green yellow blue purple aqua orange, defaults to blue
-  #themeColor = "blue"
+  themeColor = "red"
   # soft medium hard, defaults to medium
-  #themeContrast = "medium"
-  author = "Michael Schnerring"
-  subtitle = "Theme Demo"
-  description = "A retro-looking Hugo theme inspired by gruvbox. The pastel colors are high contrast, easily distinguishable, pleasing to the eye, and feature light and dark color palettes."
+  themeContrast = "hard"
+  author = "Georgi Chelenkov"
+  subtitle = "Software Engineer"
+  description = "Georgi Chelenkov is a Senior Software Developer and computer enthusiast."
 
   [params.logo]
-    text = "gruvbox"
+    text = "gchelenkov.com"
     url = "/"
 
   [params.prism]
@@ -38,16 +38,20 @@ enableRobotsTXT = true
       "clike",
       "javascript",
       "bash",
-      "diff",
-      "toml"
+      "csharp",
+      "hcl",
+      "ignore",
+      "json",
+      "markdown",
+      "powershell",
+      "toml",
+      "yaml"
     ]
     plugins = [
       "normalize-whitespace",
       "toolbar",
       "copy-to-clipboard",
-      "line-numbers",
-      "command-line",
-      "diff-highlight"
+      "command-line"
     ]
   
   # By default, the theme creates resized versions of images ranging from 300 to
@@ -118,16 +122,16 @@ enableRobotsTXT = true
     name = "Blog"
     url = "/blog"
     weight = 10
- # [[menu.main]]
- #   identifier = "projects"
- #   name = "Projects"
- #   url = "/projects"
- #   weight = 20
- # [[menu.main]]
- #   identifier = "cv"
- #   name = "CV"
- #   url = "/cv"
- #   weight = 30
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 20
+  [[menu.main]]
+    identifier = "cv"
+    name = "CV"
+    url = "/cv"
+    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -140,11 +144,11 @@ enableRobotsTXT = true
     weight = 10
     [languages.en.params.jsonResume]
       present = "present"
-  [languages.de]
-    languageName = "Deutsch"
+  [languages.bg]
+    languageName = "Български"
     weight = 20
-    [languages.de.params.jsonResume]
-      present = "heute"
+    [languages.bg.params.jsonResume]
+      present = "сега"
 
 # If you want to implement a Content-Security-Policy, add this section
 [params.csp]
